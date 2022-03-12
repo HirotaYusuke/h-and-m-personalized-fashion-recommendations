@@ -21,3 +21,7 @@
 * 予測
     - public notebookにあるヒューリスティックな方法のモデルと、協調フィルタリングモデルを作りアンサンブルしたい。
     - 
+
+役に立ちそうなリンク
+ * レコメンドに画像の情報を活用する方法 https://techblog.zozo.com/entry/visual_recommend
+ 
