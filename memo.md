@@ -23,5 +23,4 @@
     - 
 
 役に立ちそうなリンク
- * レコメンドに画像の情報を活用する方法 https://techblog.zozo.com/entry/visual_recommend
- 
+ * レコメンドに画像の情報を活用する方法: https://techblog.zozo.com/entry/visual_recommend
