@@ -1,9 +1,23 @@
 # 気が付いたことをメモ
 
 * ladysのウェアが多い。
-
-![kind_of_wear](img/kind_of_wear.png "kind_of_wear")
-
 * Jersey funcyというブランドの売上が多い。
 
-![garment_group](img/garment_group.png "garment_group")
+
+# 分からない特徴量
+* customer.csvのFN, Active
+
+
+* 協調フィルタリングメモ　https://receiptreward.jp/solution/column/collaborativefiltering.html
+　- 協調フィルタリングには、3種類ある。
+    - メモリベース、モデルベース、ハイブリッド
+    - 今回はメモリベースの手法が適していると思う。
+    - ただ、購入回数が少ない人は、メモリベースだと上手く購買特性を捉えられないと思うので、コンテンツベースフィルタリングを組み合わせたハイブリットベースが良いかも
+        - メモリベースとハイブリットベースを購買頻度に応じて重み付してアンサンブルすると良いかも。
+
+やりたいことメモ
+* EDAの方針
+    - 個人ベースで見てみる。。
+* 予測
+    - public notebookにあるヒューリスティックな方法のモデルと、協調フィルタリングモデルを作りアンサンブルしたい。
+    - 
