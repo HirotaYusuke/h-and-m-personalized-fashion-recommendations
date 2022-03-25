@@ -29,8 +29,12 @@
 ## 役に立ちそうなリンク
 
  * レコメンドに画像の情報を活用する方法: https://techblog.zozo.com/entry/visual_recommend
- * AI による商品購買予測とアソシエーション分析:　https://www.murc.jp/wp-content/uploads/2020/12/cr_201204.pdf
-    - 参考にしていたnotebook: https://www.kaggle.com/paulantoine/light-gbm-benchmark-0-3692/script ([Instacart Market Basket Analysis](https://www.kaggle.com/c/instacart-market-basket-analysis/overview/evaluation))
+ * AI による商品購買予測とアソシエーション分析　客が再注文するかの予測:　https://www.murc.jp/wp-content/uploads/2020/12/cr_201204.pdf
+    - 参考にしていたnotebook: https://www.kaggle.com/paulantoine/light-gbm-benchmark-0-3692/script 
+        - コンペ[Instacart Market Basket Analysis](https://www.kaggle.com/c/instacart-market-basket-analysis/overview/evaluation))
+    - 使われていた特徴量の内今回作れそうなもの
+        - 顧客の全注文数、顧客の全注文商品数、顧客注文商品の種類、再注文までの日数、顧客の注文あたりの商品点数、前回注文からの日数、商品カテゴリ、全商品の注文数、全商品の再購入数、再購入率
+        - 今回機械学習するには、評価関数を自分で作る必要がある。参考に出来るノートブックはないか？
 
 
 ## 評価指標メモ
@@ -70,7 +74,16 @@ MAP@12
 * 期間を1週間から、1年くらいに変える。
 * 2の所を変える。
 * テストデータの1年前に買った商品とその関連商品を入れる。
+* 季節性やその年のはやりが使えそう。
+    ```
+    For each customer_id observed in the training data, you may predict up to 12 labels for the article_id, which is the predicted items a customer will buy in the next 7-day period after the training time period.
+    ```
 
 <br>
 
 ## ノートブック[Recommend Items Purchased Together - [0.021]](https://www.kaggle.com/cdeotte/recommend-items-purchased-together-0-021) のメモ
+
+
+# これからやろうと思っている事。
+* 特徴量作成
+商品の購入回数、
